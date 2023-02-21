@@ -23,7 +23,7 @@ export async function send_input() {
 
         input = textInput;
 
-        response = await fetch(`https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${input}`);
+        response = await fetch(`https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${encodeURIComponent(input)}`);
         data = await response.blob();
 
         loader.style.display = "none";
