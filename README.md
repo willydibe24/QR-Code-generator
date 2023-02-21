@@ -1,12 +1,6 @@
-#####################################
-############            #############
-#########                  ##########
-######                         ######
+
 ###     QR Code Generator App     ###
-######                         ######
-#########                  ##########
-############            #############
-#####################################
+
 
 
 This is a QR code generator app made with Node.js and Vite.js. It can generate QR codes in two ways - By typing some text/url's or by uploading a file. It uses an API which in both cases reads an URL and converts it to a QR code.
