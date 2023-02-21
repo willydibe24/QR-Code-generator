@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/main.js" type = "module"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <title>QR-Code-Generator</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container" id = "container">
+                <div class="content" id = "content">
+                    <header>
+                        <h1>Generatore QR-Code</h1>
+                    </header>
+                    <div class="text-input">
+                        <span>Inserisci l'url da convertire</span>
+                        <input type = "text" id = "text"> 
+                    </div>
+                    <div class="file-input">
+                        <span>Oppure</span>
+                        <input type = "file" id = "file"> 
+                    </div>
+                    <button id = "generate" onclick = send()>Genera QR-Code</button>
+                    <div class="error-msg"></div>
+                </div>
+                <div class="hidden">
+                    <img src = "/qr-code.png" alt = "qr-code" id = "qr-code-image">
+                    <img src = "/loading_icon.gif" alt = "loader" id = "loader">
+                    <button id = "new-qr" onclick = newQR()>Genera un altro QR Code</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
